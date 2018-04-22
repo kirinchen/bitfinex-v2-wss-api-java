@@ -38,12 +38,23 @@ dependencies {
     	"org.springframework.boot:spring-boot-starter-web",
     	"org.apache.commons:commons-lang3:3.0",
     	"javax.inject:javax.inject:1",
-    	"com.google.guava:guava:15.0",
+    	"com.google.guava:guava:24.0-jre",
     	"joda-time:joda-time:2.7",
-    	"net.sf.dozer:dozer:5.5.1"
+    	"net.sf.dozer:dozer:5.5.1",
+    	"org.apache.logging.log4j:log4j-core:2.10.0",
+    	"org.apache.logging.log4j:log4j-slf4j-impl:2.10.0",
+    	"org.glassfish.tyrus.bundles:tyrus-standalone-client-jdk:1.13.1",
+    	"org.json:json:20180130",
+    	"org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final",
+    	"org.bboxdb:bboxdb-commons:0.5.0"
+    	
 
     		)
-	testCompile("org.springframework.boot:spring-boot-starter-test")
+	testCompile(
+		"org.springframework.boot:spring-boot-starter-test",
+		"junit:junit:4.12",
+		"org.mockito:mockito-core:2.15.0"
+		)
 }
 
 test {
